@@ -34,7 +34,7 @@ public class ProductService {
             notifyCustomers(productName,
                     String.format("Product '%s' arrived", productName));
 
-        } else if (amountBefore <= 1 && amountAfter < 0) { // было amountBefore >= 1 && amountAfter < 1
+        } else if (amountBefore <= 1 && amountAfter < 0) { // was amountBefore >= 1 && amountAfter < 1
             notifyCustomers(productName,
                     String.format("Product '%s' is out", productName));
         }
